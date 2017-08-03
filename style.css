@@ -1,0 +1,99 @@
+/*font-family: 'VT323', monospace;
+font-family: 'Roboto Mono', monospace;*/
+
+/*=======================================colors =====================
+main:             #FF6743
+accent:           #BBFF5C
+soft-match:       #214ECC
+soft-match-hue:   #264BB2
+extra:            #B23A1D
+*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  height: 100vh;
+}
+
+.container {
+  background-image: url("img/bg3.jpg");
+  background-size:cover;
+  height: 100%;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #BBFF5C;
+  text-shadow: 5px 5px #6a9e20;
+  font-size: 60px;
+}
+
+.logo-div {
+  width: 100%;
+  background-color: black;
+}
+
+.logo-div > span {
+  font-family: 'VT323', monospace;
+  color: white;
+  font-size: 80px;
+  margin-left: 25px;
+}
+
+.calc-body {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+button {
+  flex-basis: 25%;
+  padding: 20px;
+  border: 1px solid #B23A1D;
+  background-color: #FF6743;
+  color: #BBFF5C;
+  font-weight: bolder;
+  font-size: 40px;
+  transition: background-color 0.5s, text-shadow 1s, color .5s;
+  flex-shrink: 0;
+}
+
+button:hover {
+  background-color: #ff8c70;
+  text-shadow: 3px 3px 1px black;
+  color: white;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+.screen {
+  background-color: white;
+  height: auto;
+  flex-basis: 75%;
+  text-align: right;
+  font-size: 30px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #B23A1D;
+}
