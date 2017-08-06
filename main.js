@@ -3,8 +3,6 @@ const btns = document.querySelectorAll("button");
 const calScreen = document.querySelector(".screen-content");
 console.log(btns);
 let inputString = "";
-let totalMaths = 0;
-let mathsArray = [];
 
 // Add Event Listeners to Buttons ===============================//
 for (var i = 0; i < btns.length; i++) {
