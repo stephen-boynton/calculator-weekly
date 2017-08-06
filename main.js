@@ -15,7 +15,7 @@ function collectInput () {
   if (this.value == "c") {
     clearScreen();
   }else if (this.value == "=") {
-    if (inputString > -1) {
+    if (inputString.search(".") > -1) {
       inputString = eval(inputString).toFixed(2);
       displayInput(inputString);
     } else {
