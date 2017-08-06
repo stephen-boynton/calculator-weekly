@@ -1,6 +1,7 @@
 //Globals =======================================================//
 const btns = document.querySelectorAll("button");
 const calScreen = document.querySelector(".screen-content");
+console.log(btns);
 let inputString = "";
 let totalMaths = 0;
 let mathsArray = [];
@@ -22,11 +23,11 @@ function collectInput () {
   }else if (this.value == "+" || this.value == "-" || this.value == "/" || this.value == "*") {
     console.log(this.value);
     inputString += " " + this.value.toString() + " ";
-    calScreen.textContent = inputString;
+    displayInput(inputString);
   } else {
     console.log(this.value);
     inputString += this.value.toString();
-    calScreen.textContent = inputString;
+    displayInput(inputString);
   }
   return inputString;
 }
