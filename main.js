@@ -8,7 +8,7 @@ let mathsArray = [];
 
 // Add Event Listeners to Buttons ===============================//
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", collectInput(e))
+  btns[i].addEventListener("click", collectInput)
 };
 
 // Main Program ================================================//
@@ -17,8 +17,13 @@ function collectInput () {
   if (this.value == "c") {
     clearScreen();
   }else if (this.value == "=") {
+    if (inputString > -1) {
+      inputString = eval(inputString).toFixed(2);
+      displayInput(inputString);
+    } else {
     inputString = eval(inputString);
     displayInput(inputString);
+    }
   } else {
     console.log(this.value);
     inputString += this.value.toString();
@@ -34,5 +39,5 @@ function displayInput (string) {
 
 function clearScreen () {
   inputString = "";
-  calScreen.textContent = inputString;
+  displayInput(inputString);
 }
